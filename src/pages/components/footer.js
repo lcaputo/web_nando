@@ -5,12 +5,13 @@ const Footer = () => {
     <footer class="text-gray-600 body-font">
       <button type="button" onClick={() => window.scrollTo({top:0, behavior:"smooth"}) }> Scroll Top</button>
       <div class="border-t border-gray-200">
-        <div class="container grid grid-cols-4 lg:grid-cols-5 px-5 pt-8  mx-auto items-center">
-          <div className="text-center lg:col-span-2 h-full">
+        <div class="container grid grid-cols-4 lg:grid-cols-4 px-5 pt-8  mx-auto items-center">
+
+          <div className="text-center col-span-4 lg:col-span-2 h-full">
             <Image src="/logo.png" width={80} height={80} className="block" />
 
             <span class="inline-flex lg:ml-auto lg:mt-0 w-full justify-center">
-              <a class="text-gray-500">
+              <a class="text-gray-500" href="https://www.facebook.com/herobu9" target="_blank">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -22,7 +23,7 @@ const Footer = () => {
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
-              <a class="ml-3 text-gray-500">
+              <a class="ml-3 text-gray-500" href="https://twitter.com/BulaRolong/" target="_blank">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -34,7 +35,7 @@ const Footer = () => {
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                 </svg>
               </a>
-              <a class="ml-3 text-gray-500">
+              <a class="ml-3 text-gray-500" href="https://www.instagram.com/herobu9/" target="_blank">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -48,7 +49,7 @@ const Footer = () => {
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </a>
-              <a class="ml-3 text-gray-500">
+              <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/hernando-rolong-bula-3015a1b1/" target="_blank">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
@@ -68,56 +69,38 @@ const Footer = () => {
             </span>
           </div>
 
-          <div class="w-full px-4">
+          <hr className="col-span-4 my-5 lg:hidden"/>
+
+          <div class="w-full px-4 col-span-2 lg:col-span-1">
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              CATEGORIES
+              CATEGORIAS
             </h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Medicina</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Oftalmologia</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Mejora tu Visión</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Servicios Oculares</a>
               </li>
             </nav>
           </div>
 
-          <div class=" w-full px-4">
+          <div class=" w-full px-4 col-span-2 lg:col-span-1">
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              CATEGORIES
+              RELACIONADO
             </h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Galucoma</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-              </li>
-              <li>
-                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-              </li>
-              <li>
-                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-              </li>
-            </nav>
-          </div>
-
-          <div class=" w-full px-4">
-            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              CATEGORIES
-            </h2>
-            <nav class="list-none mb-10">
-              <li>
-                <a class="text-gray-600 hover:text-gray-800">First Link</a>
-              </li>
-              <li>
-                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Catarata</a>
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">Third Link</a>
@@ -131,20 +114,9 @@ const Footer = () => {
       </div>
       <div class="bg-gray-100">
         <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p class="text-gray-500 text-sm text-center sm:text-left">
-            © 2020 Tailblocks —
-            <a
-              href="https://twitter.com/knyttneve"
-              class="text-gray-600 ml-1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @knyttneve
-            </a>
+          <p class="text-gray-500 text-sm text-center sm:text-left m-auto">
+            Hernando Rolong © 2022 
           </p>
-          <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
-            Enamel pin tousled raclette tacos irony
-          </span>
         </div>
       </div>
     </footer>

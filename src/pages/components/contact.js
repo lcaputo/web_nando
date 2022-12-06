@@ -19,28 +19,23 @@ const Contact = () => {
             src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
           ></iframe>
           <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-            <div class="lg:w-1/2 px-6">
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                ADDRESS
+          <div class="lg:w-1/2 px-6">
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
+                DIRECCIÓN
               </h2>
-              <p class="mt-1">
-                Photo booth tattooed prism, portland taiyaki hoodie neutra
-                typewriter
+              <p class="leading-relaxed">
+                Calle 80 # 47 43
               </p>
             </div>
-            <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+            <div class="lg:w-1/2 px-6">
               <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                PHONE
+                TELÉFONO
               </h2>
-              <p class="leading-relaxed">123-456-7890</p>
+              <a href="tel:+573157542607" class="leading-relaxed text-blue-500">+57 315 754 2607</a>
             </div>
           </div>
         </div>
-        <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        <div class="lg:w-2/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
             Feedback
           </h2>
